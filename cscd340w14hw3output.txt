@@ -1,0 +1,167 @@
+jacob@APOLLO:~/cscd340/Assignments/3$ ./mysh
+?: ls
+bashExamples         execution    makefile       somethingelse.txt  test.txt
+cscd340w14hw3.c      functions.h  mysh           some.txt
+cscd340_w14_hw3.pdf  linkedlist   someother.txt  specialCommands
+?: alias la="ls -al"
+?: la
+total 216
+drwxr-xr-x 6 jacob jacob  4096 Jan 28 22:03 .
+drwxr-xr-x 5 jacob jacob  4096 Jan 28 21:27 ..
+drwxr-xr-x 2 jacob jacob  4096 Jan 25 12:57 bashExamples
+-rw-r--r-- 1 jacob jacob 13520 Jan 28 22:03 cscd340w14hw3.c
+-rw-r--r-- 1 jacob jacob 93038 Jan 21 09:06 cscd340_w14_hw3.pdf
+drwxr-xr-x 2 jacob jacob  4096 Jan 28 21:16 execution
+-rw-r--r-- 1 jacob jacob   618 Jan 28 21:57 functions.h
+drwxr-xr-x 2 jacob jacob  4096 Jan 26 21:11 linkedlist
+-rw-r--r-- 1 jacob jacob   260 Jan 25 21:10 makefile
+-rwxr-xr-x 1 jacob jacob 47162 Jan 28 22:03 mysh
+-rw-r--r-- 1 jacob jacob    43 Jan 28 22:05 .mysh_history
+-rw-r--r-- 1 jacob jacob    80 Jan 28 22:05 .myshrc
+-rw-r--r-- 1 jacob jacob    20 Jan 28 21:54 .profile
+-rw-r--r-- 1 jacob jacob     3 Jan 28 21:13 someother.txt
+-rwxr-xr-x 1 jacob jacob   153 Jan 28 21:19 somethingelse.txt
+-rw-r--r-- 1 jacob jacob     4 Jan 28 21:18 some.txt
+drwxr-xr-x 2 jacob jacob  4096 Jan 28 22:03 specialCommands
+-rwxr-xr-x 1 jacob jacob     4 Jan 28 21:47 test.txt
+?: unalias la
+?: la
+Command not valid!
+?: nvajs
+Command not valid!
+?: asdkfm | aksdf
+Command not valid!
+Command not valid!
+?: asdf | wc -w
+Command not valid!
+0
+?: ls -al | asdjfk
+Command not valid!
+?: ls -al | wc -w>test.txt
+?: ls -al> another.txt
+?: exit
+
+
+
+========================================================
+
+
+jacob@APOLLO:~/cscd340/Assignments/3$ ./mysh
+?: history
+0  ls -al | asdjfk
+1  ls -al | wc -w>test.txt
+2  ls -al> another.txt
+?: less .myshrc
+?: ls
+another.txt      cscd340_w14_hw3.pdf  linkedlist  someother.txt      specialCommands
+bashExamples     execution            makefile    somethingelse.txt  test.txt
+cscd340w14hw3.c  functions.h          mysh        some.txt
+?: history
+0  ls -al | asdjfk
+1  ls -al | wc -w>test.txt
+2  ls -al> another.txt
+3  history
+4  less .myshrc
+5  ls
+?: !!
+0  ls -al | asdjfk
+1  ls -al | wc -w>test.txt
+2  ls -al> another.txt
+3  history
+4  less .myshrc
+5  ls
+6  history
+?: ls -al
+total 220
+drwxr-xr-x 6 jacob jacob  4096 Jan 28 22:06 .
+drwxr-xr-x 5 jacob jacob  4096 Jan 28 21:27 ..
+-rwxr-xr-x 1 jacob jacob  1056 Jan 28 22:06 another.txt
+drwxr-xr-x 2 jacob jacob  4096 Jan 25 12:57 bashExamples
+-rw-r--r-- 1 jacob jacob 13520 Jan 28 22:03 cscd340w14hw3.c
+-rw-r--r-- 1 jacob jacob 93038 Jan 21 09:06 cscd340_w14_hw3.pdf
+drwxr-xr-x 2 jacob jacob  4096 Jan 28 21:16 execution
+-rw-r--r-- 1 jacob jacob   618 Jan 28 21:57 functions.h
+drwxr-xr-x 2 jacob jacob  4096 Jan 26 21:11 linkedlist
+-rw-r--r-- 1 jacob jacob   260 Jan 25 21:10 makefile
+-rwxr-xr-x 1 jacob jacob 47162 Jan 28 22:03 mysh
+-rw-r--r-- 1 jacob jacob    60 Jan 28 22:06 .mysh_history
+-rw-r--r-- 1 jacob jacob    80 Jan 28 22:05 .myshrc
+-rw-r--r-- 1 jacob jacob    20 Jan 28 21:54 .profile
+-rw-r--r-- 1 jacob jacob     3 Jan 28 21:13 someother.txt
+-rwxr-xr-x 1 jacob jacob   153 Jan 28 21:19 somethingelse.txt
+-rw-r--r-- 1 jacob jacob     4 Jan 28 21:18 some.txt
+drwxr-xr-x 2 jacob jacob  4096 Jan 28 22:03 specialCommands
+-rwxr-xr-x 1 jacob jacob     4 Jan 28 22:06 test.txt
+?: ! 5
+Command not valid!
+?: !5
+another.txt      cscd340_w14_hw3.pdf  linkedlist  someother.txt      specialCommands
+bashExamples     execution            makefile    somethingelse.txt  test.txt
+cscd340w14hw3.c  functions.h          mysh        some.txt
+?: exit
+
+
+===========================================================================
+
+jacob@APOLLO:~/cscd340/Assignments/3$ ./mysh
+?: ls -al
+total 208
+drwxr-xr-x 7 jacob jacob  4096 Jan 28 22:14 .
+drwxr-xr-x 5 jacob jacob  4096 Jan 28 21:27 ..
+drwxr-xr-x 2 jacob jacob  4096 Jan 25 12:57 bashExamples
+-rw-r--r-- 1 jacob jacob 13599 Jan 28 22:14 cscd340w14hw3.c
+-rw-r--r-- 1 jacob jacob  3626 Jan 28 22:10 cscd340w14hw3output.txt
+-rw-r--r-- 1 jacob jacob 93038 Jan 21 09:06 cscd340_w14_hw3.pdf
+drwxr-xr-x 2 jacob jacob  4096 Jan 28 21:16 execution
+-rw-r--r-- 1 jacob jacob   618 Jan 28 21:57 functions.h
+drwxr-xr-x 2 jacob jacob  4096 Jan 26 21:11 linkedlist
+-rw-r--r-- 1 jacob jacob   260 Jan 25 21:10 makefile
+-rwxr-xr-x 1 jacob jacob 47218 Jan 28 22:14 mysh
+-rw-r--r-- 1 jacob jacob    13 Jan 28 22:10 .mysh_history
+-rw-r--r-- 1 jacob jacob    80 Jan 28 22:05 .myshrc
+-rw-r--r-- 1 jacob jacob    20 Jan 28 21:54 .profile
+drwxr-xr-x 2 jacob jacob  4096 Jan 28 22:03 specialCommands
+drwxr-xr-x 6 jacob jacob  4096 Jan 28 22:11 submission
+?: ls -al &
+?: total 208
+drwxr-xr-x 7 jacob jacob  4096 Jan 28 22:14 .
+drwxr-xr-x 5 jacob jacob  4096 Jan 28 21:27 ..
+drwxr-xr-x 2 jacob jacob  4096 Jan 25 12:57 bashExamples
+-rw-r--r-- 1 jacob jacob 13599 Jan 28 22:14 cscd340w14hw3.c
+-rw-r--r-- 1 jacob jacob  3626 Jan 28 22:10 cscd340w14hw3output.txt
+-rw-r--r-- 1 jacob jacob 93038 Jan 21 09:06 cscd340_w14_hw3.pdf
+drwxr-xr-x 2 jacob jacob  4096 Jan 28 21:16 execution
+-rw-r--r-- 1 jacob jacob   618 Jan 28 21:57 functions.h
+drwxr-xr-x 2 jacob jacob  4096 Jan 26 21:11 linkedlist
+-rw-r--r-- 1 jacob jacob   260 Jan 25 21:10 makefile
+-rwxr-xr-x 1 jacob jacob 47218 Jan 28 22:14 mysh
+-rw-r--r-- 1 jacob jacob    13 Jan 28 22:10 .mysh_history
+-rw-r--r-- 1 jacob jacob    80 Jan 28 22:05 .myshrc
+-rw-r--r-- 1 jacob jacob    20 Jan 28 21:54 .profile
+drwxr-xr-x 2 jacob jacob  4096 Jan 28 22:03 specialCommands
+drwxr-xr-x 6 jacob jacob  4096 Jan 28 22:11 submission
+ls
+bashExamples             cscd340_w14_hw3.pdf  linkedlist  specialCommands
+cscd340w14hw3.c          execution            makefile    submission
+cscd340w14hw3output.txt  functions.h          mysh
+?: test
+?: ls -al&
+?: total 208
+drwxr-xr-x 7 jacob jacob  4096 Jan 28 22:14 .
+drwxr-xr-x 5 jacob jacob  4096 Jan 28 21:27 ..
+drwxr-xr-x 2 jacob jacob  4096 Jan 25 12:57 bashExamples
+-rw-r--r-- 1 jacob jacob 13599 Jan 28 22:14 cscd340w14hw3.c
+-rw-r--r-- 1 jacob jacob  3626 Jan 28 22:10 cscd340w14hw3output.txt
+-rw-r--r-- 1 jacob jacob 93038 Jan 21 09:06 cscd340_w14_hw3.pdf
+drwxr-xr-x 2 jacob jacob  4096 Jan 28 21:16 execution
+-rw-r--r-- 1 jacob jacob   618 Jan 28 21:57 functions.h
+drwxr-xr-x 2 jacob jacob  4096 Jan 26 21:11 linkedlist
+-rw-r--r-- 1 jacob jacob   260 Jan 25 21:10 makefile
+-rwxr-xr-x 1 jacob jacob 47218 Jan 28 22:14 mysh
+-rw-r--r-- 1 jacob jacob    13 Jan 28 22:10 .mysh_history
+-rw-r--r-- 1 jacob jacob    80 Jan 28 22:05 .myshrc
+-rw-r--r-- 1 jacob jacob    20 Jan 28 21:54 .profile
+drwxr-xr-x 2 jacob jacob  4096 Jan 28 22:03 specialCommands
+drwxr-xr-x 6 jacob jacob  4096 Jan 28 22:11 submission
+test
+?: exit
